@@ -1,0 +1,551 @@
+---
+- :address: 409D BRIDGE INN ROAD, MERNDA VIC 3754
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 27/07/2015
+    - 29/07/2015
+    - 26/11/2015
+    - 02/09/2015
+    - 27/11/2015
+    - 13/09/2015
+- :address: 805 BERWICK-CRANBOURNE ROAD, CRANBOURNE NORTH VIC 3977
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 15/06/2015
+    - 19/06/2015
+    - 28/10/2015
+    - 12/02/2016
+    - 18/10/2015
+- :address: 30S HARDYS ROAD, CLYDE NORTH VIC 3978
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    :date:
+    - 10/11/2015
+    - 20/11/2015
+- :address: 82-110 STEWARTS ROAD, ARMSTRONG CREEK VIC 3217
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 02/06/2015
+    - 05/06/2015
+    - 21/09/2015
+    - 21/09/2015
+    - 28/06/2015
+- :address: Lara Central Stage 3
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 20/05/2015
+    - 21/05/2015
+    - 17/09/2015
+    - 17/09/2015
+    - 20/09/2015
+- :address: Highlands - DP8 - Stage 94
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 19/06/2015
+    - 25/06/2015
+    - 24/09/2015
+    - 27/09/2015
+- :address: 25S PATTERSONS ROAD, CLYDE NORTH VIC 3978
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 05/08/2015
+    - 07/08/2015
+    - 25/01/2016
+    - 11/10/2015
+- :address: HIGHGATE ROAD, KILMORE VIC 3764
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 12/03/2015
+    - 16/03/2015
+    - 26/02/2016
+    - 15/02/2016
+    - 22/11/2015
+- :address: 1992-2106 WESTERN HIGHWAY, ROCKBANK VIC 3335
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 29/08/2015
+    - 01/09/2015
+    - 27/11/2015
+    - 15/01/2016
+    - 11/10/2015
+- :address: VIEWGRAND DRIVE, PAKENHAM VIC 3810
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    :date:
+    - 05/11/2015
+    - 09/11/2015
+    - 02/02/2016
+- :address: BAYVIEW ROAD, OFFICER VIC 3809
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 26/02/2015
+    - 04/03/2015
+    - 22/12/2015
+    - 23/11/2015
+    - 24/12/2015
+    - 14/06/2015
+- :address: SKYLINE DRIVE, OFFICER VIC 3809
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 07/08/2015
+    - 07/08/2015
+    - 01/12/2015
+    - 02/12/2015
+    - 29/11/2015
+- :address: Aurora Stage 26
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 12/10/2012
+    - 22/01/2013
+    - 14/08/2015
+    - 02/04/2013
+    - 27/08/2015
+    - 05/07/2015
+- :address: Adresse Stage 6 - Point Cook Road, Point Cook 3030
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 14/07/2015
+    - 22/07/2015
+    - 14/01/2016
+    - 21/02/2016
+- :address: Kings Leigh Estate - Stage 7
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    :date:
+    - 11/11/2015
+    - 17/11/2015
+- :address: 75 AIRPORT ROAD, MOUNT DUNEED VIC 3217
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 21/01/2015
+    - 27/01/2015
+    - 09/03/2016
+    - 04/05/2015
+    - 25/02/2016
+    - 17/01/2016
+- :address: Riverstone Stage 12b
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Supplied)
+    :date:
+    - 23/07/2012
+    - 07/08/2012
+    - 14/08/2012
+    - 03/10/2012
+    - 13/08/2012
+- :address: 1425 POUND ROAD, CLYDE NORTH VIC 3978
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 27/10/2015
+    - 04/11/2015
+    - 10/01/2016
+- :address: WESTBROOK STAGE 10 - 905 DOHERTYS ROAD, TRUGANINA
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    :date:
+    - 03/09/2015
+    - 18/09/2015
+- :address: Adresse Stage 6 - Point Cook Road, Point Cook 3030
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 14/07/2015
+    - 22/07/2015
+    - 14/01/2016
+    - 21/02/2016
+- :address: 11-13 BUNBURY AVENUE, NARRE WARREN VIC 3805
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    :date:
+    - 19/06/2015
+    - 24/06/2015
+- :address: Upper Point Cook - Stage 4 - Crown Allotment 2043 Parish of Tarneit
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 07/11/2014
+    - 20/02/2015
+    - 09/03/2016
+    - 13/12/2015
+- :address: 730 BRIDGE INN ROAD, DOREEN VIC 3754
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 24/11/2015
+    - 27/11/2015
+    - For Comment
+    - 06/03/2016
+- :address: Mernda Villages St63
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Supplied)
+    :date:
+    - 17/02/2015
+    - 24/02/2015
+    - 16/07/2015
+    - 13/04/2015
+    - 17/07/2015
+    - 13/04/2015
+- :address: NORORAT PLACE, CRANBOURNE NORTH VIC 3977
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 11/06/2015
+    - 18/06/2015
+    - 11/09/2015
+    - 12/02/2016
+    - 13/12/2015
+- :address: Upper Point Cook - Stage 4 - Crown Allotment 2043 Parish of Tarneit
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 07/11/2014
+    - 20/02/2015
+    - 09/03/2016
+    - 13/12/2015
+- :address: Lockerbie - Precinct 1 - Stage 102
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 20/08/2014
+    - 08/09/2014
+    - For Comment
+    - 03/09/2015
+    - 13/09/2015
+- :address: Haven - Stage 3
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Supplied)
+    :date:
+    - 24/07/2015
+    - 31/07/2015
+    - 16/02/2016
+    - 07/03/2016
+- :address: 525 STUD ROAD, WANTIRNA SOUTH VIC 3152
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    :date:
+    - 01/05/2015
+    - 10/06/2015
+    - 09/03/2016
+- :address: Riverdale Village Stage 1
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 10/03/2015
+    - 17/03/2015
+    - 18/12/2015
+    - 31/01/2016
+- :address: 85 DAVIS ROAD, DIGGERS REST VIC 3427
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 25/09/2015
+    - 05/10/2015
+    - 29/01/2016
+    - 15/11/2015
+- :address: SALTLAKE BOULEVARD, WOLLERT VIC 3750
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 30/04/2015
+    - 05/05/2015
+    - 21/06/2015
+- :address: 542-586 BARWON HEADS ROAD, CHARLEMONT VIC 3217
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Street Addressing (Supplied)
+    :date:
+    - 26/03/2015
+    - 07/04/2015
+    - For Comment
+    - 05/05/2015
+- :address: 30 HARDYS ROAD, CLYDE NORTH VIC 3978
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 31/03/2015
+    - 07/04/2015
+    - 31/05/2015
+- :address: NORORAT PLACE, CRANBOURNE NORTH VIC 3977
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 11/06/2015
+    - 18/06/2015
+    - 11/09/2015
+    - 12/02/2016
+    - 13/12/2015
+- :address: 660 BERWICK-CRANBOURNE ROAD, CLYDE NORTH VIC 3978
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 23/09/2015
+    - 28/09/2015
+    - 19/01/2016
+    - 24/01/2016
+- :address: PS737608X Lot K
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    :date:
+    - 02/04/2015
+    - 22/04/2015
+- :address: 201-219 HORSESHOE BEND ROAD, CHARLEMONT VIC 3217
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Street Addressing (Supplied)
+    :date:
+    - 12/05/2015
+    - 12/05/2015
+    - For Comment
+    - 13/05/2015
+- :address: College Green Estate stage 1
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 19/11/2014
+    - 28/11/2014
+    - 15/05/2015
+    - 10/09/2015
+    - 13/09/2015
+- :address: 1/22 NORFOLK STREET, NORTH BENDIGO VIC 3550
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Permit)
+    - Final Referral Response (Cert)
+    - Planning Permit
+    - Original Certification Date
+    - Street Addressing (Supplied)
+    :date:
+    - 11/03/2014
+    - 19/06/2014
+    - 22/07/2014
+    - 07/08/2015
+    - 24/07/2014
+    - 03/10/2014
+    - 30/06/2014
+- :address: 112-140 STEWARTS ROAD, ARMSTRONG CREEK VIC 3217
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 24/07/2015
+    - 29/07/2015
+    - 19/02/2016
+    - 23/02/2016
+    - 21/02/2016
+- :address: 75 AIRPORT ROAD, MOUNT DUNEED VIC 3217
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Final Referral Response (Cert)
+    - Original Certification Date
+    - Re-certification (Most Recent)
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 21/01/2015
+    - 27/01/2015
+    - 09/03/2016
+    - 04/05/2015
+    - 25/02/2016
+    - 17/01/2016
+- :address: 170 WALLAN WHITTLESEA ROAD, WALLAN VIC 3756
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Street Addressing (Supplied)
+    :date:
+    - 23/07/2014
+    - 30/07/2014
+    - 02/10/2014
+- :address: 630S HALL ROAD, CRANBOURNE WEST VIC 3977
+  :completed:
+    :stage:
+    - Application Submission
+    - Referral
+    - Original Certification Date
+    - Street Addressing (Submitted on M1)
+    :date:
+    - 22/05/2015
+    - 28/05/2015
+    - 11/08/2015
+    - 21/06/2015
