@@ -29,12 +29,6 @@ class SpearStatus
     return get_milestone_info_by_spear_ref(spear_refs)
   end
 
-  # def write_to_file(info_to_write = [])
-  #   File.open("output/output.yml",'a') do |h|
-  #     h << YAML.dump(info_to_write)
-  #   end
-  # end
-
   private
   def submit_form(plan_number = "")
     #fill the form with plan number and submit the form, return the response html page
@@ -43,7 +37,7 @@ class SpearStatus
     browser.text_field(:id => 'planNumber').set plan_number
     browser.button(:value => 'search').click
 
-    sleep(15) # to wait for the js execution
+    sleep(20) # to wait for the js execution
 
     page = browser.html
     browser.close
@@ -56,15 +50,6 @@ class SpearStatus
 
     doc = Nokogiri::HTML(res_page)
     node_size = doc.xpath('//*[@id="grid_1"]/div[2]/div').children.size - 3 #3 are other nodes not to use
-    #index is from 1 to node_size:
-    spear_refs = (1..node_size).inject({:plan_number => [plan_number], :addresses => [], :refs => []}) do |refs, i|
-
-      refs[:addresses] << (doc.xpath("//*[@id='grid_1']/div[2]/div/div[#{i}]/div[1]/div[2]/div/div/a[1]/span").text)  #row 1
-      refs[:refs] << (doc.xpath("//*[@id='grid_1']/div[2]/div/div[#{i}]/div[9]/div[2]/div/span").text) #column 9
-
-      refs
-    end
-    puts spear_refs
     #assumption: if there are multiple stages found and customer didn't specify the stage, then return directly without providing any data
     #if there's only one stage, then return the only one and stage can be empty and customers don't need to specify it.
     #if stage is not null, get the spear_refs for the specific stage or else return all of the refs found
@@ -72,18 +57,27 @@ class SpearStatus
       string_to_output = "There are multiple stages for plan_number: #{plan_number}, please specify a stage number, e.g. stage 18"
       puts string_to_output
       File.open("output/multiple_stages_warning.txt", "a") {|f| f.puts string_to_output }
-
       return {}
     end
 
+    #index is from 1 to node_size: get all of the addresses and ref numbers here:
+    spear_refs = (1..node_size).inject({:plan_number => plan_number, :addresses => [], :refs => []}) do |refs, i|
+      refs[:addresses] << (doc.xpath("//*[@id='grid_1']/div[2]/div/div[#{i}]/div[1]/div[2]/div/div/a[1]/span").text)  #row 1
+      refs[:refs] << (doc.xpath("//*[@id='grid_1']/div[2]/div/div[#{i}]/div[9]/div[2]/div/span").text) #column 9
+      refs
+    end
+    puts spear_refs
+
     unless stage.empty?
-      spear_refs[:addresses].each_with_index do |addr, i|
+      addresses = []
+      refs = []
+      spear_refs.values_at(:addresses, :refs).transpose.each do |addr, ref|
         if addr.downcase.include?(stage.downcase)
-          spear_refs[:refs]  = [spear_refs[:refs][i]]
-          spear_refs[:addresses] = [spear_refs[:addresses][i]]
-          break
+          addresses << addr
+          refs  << ref
         end
       end
+      spear_refs[:addresses], spear_refs[:refs] = addresses, refs
     end
     spear_refs
   end
@@ -93,7 +87,7 @@ class SpearStatus
     return [] if spear_refs.empty?
 
     completed_info = []
-    spear_refs[:refs].each_with_index do |ref, index|
+    spear_refs.values_at(:addresses, :refs).transpose.each do |addr, ref|
       milestone_url =  MILESTONE_URL_PREFIX + ref
       browser = Watir::Browser.new #after close, have to new one again
       # puts milestone_url
@@ -102,12 +96,13 @@ class SpearStatus
       #count of the rows of milestone table
       total_rows = doc.xpath('//*[@id="sid003_milestones_list"]/tbody/tr').size - 1
 
-      completed = {:plan_number => spear_refs[:plan_number][index], :address => spear_refs[:addresses][index], :completed => {:stage => [], :date => [] } }
+      completed = {:plan_number => spear_refs[:plan_number], :address => addr, :completed => [] }
       (1..total_rows).each do |i|
         image = doc.xpath("//*[@id='sid003_milestones_list']/tbody/tr[#{i}]/td[1]/img")[0][:src]
         if image.include?("/images/iconcomplete") #for those ticked boxes, using the iconcomplete image
-          completed[:completed][:stage] << doc.xpath("//*[@id='sid003_milestones_list']/tbody/tr[#{i}]/td[2]/p").text.strip.chomp
-          completed[:completed][:date] << doc.xpath("//*[@id='sid003_milestones_list']/tbody/tr[#{i}]/td[3]/p").text.strip.chomp
+          stage = doc.xpath("//*[@id='sid003_milestones_list']/tbody/tr[#{i}]/td[2]/p").text.strip.chomp
+          date = doc.xpath("//*[@id='sid003_milestones_list']/tbody/tr[#{i}]/td[3]/p").text.strip.chomp
+          completed[:completed] << "#{stage} #{date}"
         end
       end
       completed_info << completed

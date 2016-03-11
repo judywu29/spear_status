@@ -34,7 +34,7 @@ describe SpearStatus do
       @browser.goto PS747366P_url
       sleep 15
       result = @spear_status.send :get_spear_refs_after_submit, 'PS747366P', @browser.html
-      expect(result).to eq(:addresses=>["8 PLAZA COURT, ROXBURGH PARK VIC 3064"], :refs=>["S080799A"])
+      expect(result).to eq(:plan_number=>"PS747366P", :addresses=>["8 PLAZA COURT, ROXBURGH PARK VIC 3064"], :refs=>["S080799A"])
     end
 
     it "returns empty hash if there are multiple stages but no stage provided" do
@@ -50,7 +50,7 @@ describe SpearStatus do
       @browser.goto PS611333_url
       sleep 15
       result = @spear_status.send :get_spear_refs_after_submit, 'PS611333', @browser.html, 'stage 18'
-      expect(result).to eq(:addresses=>["Saltwater Coast Stage 18"], :refs=>["S067474J"])
+      expect(result).to eq(:plan_number=>"PS611333", :addresses=>["Saltwater Coast Stage 18"], :refs=>["S067474J"])
 
     end
 
@@ -64,10 +64,10 @@ describe SpearStatus do
     end
     context "with valid spear refs" do
       it "returns milestone information" do
-        spear_refs = { :addresses=>["Saltwater Coast Stage 18"], :refs=>["S067474J"] }
+        spear_refs = { :plan_number=>"PS611333", :addresses=>["Saltwater Coast Stage 18"], :refs=>["S067474J"] }
         result = @spear_status.send :get_milestone_info_by_spear_ref, spear_refs
         expect(result.size).to eq 1
-        expect(result).to include({:address=>"Saltwater Coast Stage 18", :completed=>{:stage=>["Application Submission", "Referral", "Street Addressing (Submitted on M1)"], :date=>["08/05/2015", "19/05/2015", "09/08/2015"]}})
+        expect(result).to include({:plan_number=> "PS611333", :address=>"Saltwater Coast Stage 18", :completed=>["Application Submission 08/05/2015", "Referral 19/05/2015", "Street Addressing (Submitted on M1) 09/08/2015"] })
 
       end
     end
@@ -86,7 +86,7 @@ describe SpearStatus do
         allow(@spear_status).to receive(:submit_form).with(plan_number).and_return(html_string)
         spear_refs = {:addresses=>["Saltwater Coast Stage 18"], :refs=>["S067474J"]}
         allow(@spear_status).to receive(:get_spear_refs_after_submit).with(plan_number, html_string, '').and_return(spear_refs)
-        status = [{:address=>"Saltwater Coast Stage 18", :completed=>{:stage=>["Application Submission", "Referral", "Street Addressing (Submitted on M1)"], :date=>["08/05/2015", "19/05/2015", "09/08/2015"]}}]
+        status = [{:plan_number=> "PS611333", :address=>"Saltwater Coast Stage 18", :completed=>["Application Submission 08/05/2015", "Referral 19/05/2015", "Street Addressing (Submitted on M1) 09/08/2015"] }]
         allow(@spear_status).to receive(:get_milestone_info_by_spear_ref).with(spear_refs).and_return(status)
         expect(@spear_status.get_status('PS611333')).to eq status
       end

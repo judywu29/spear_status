@@ -30,28 +30,24 @@ if $0 == __FILE__
   spear_status = SpearStatus.new
   all_content = File.read(plan_number_file)
   plan_numbers = all_content.split(",")
-  all_status = []
-  plan_numbers.each do |plan_number|
-    status = spear_status.get_status(plan_number)
-    all_status += status
-  end
 
-  # spear_status.write_to_file(all_status)
-
-
-  # File.open("output/output.yml",'a') { |h| h << YAML.dump(all_status) }
-  File.open("output/output.csv",'a') do |f|
+  time = Time.now.to_i
+  File.open("output/output_#{time}.csv",'a') do |f|
     f.puts "Plan number|Address|Milestone"
-    data = []
-    all_status.each do |hash|
-      stage_info = []
-      hash[:completed][:stage].each_with_index do |stage, index|
-        stage_info << "#{stage} #{hash[:completed][:date][index]}"
+
+    plan_numbers.uniq.each do |plan_number|
+      begin
+        status = spear_status.get_status(plan_number)
+        status.each do |s|
+          f.puts "#{s[:plan_number]}|#{s[:address]}|#{s[:completed].join(";")}"
+        end
+      rescue Exception => e
+        puts "Exception: #{e.message} for plan_number: #{plan_number}"
+        redo
       end
-      data << hash[:plan_number] << hash[:address] << stage_info.join(";")
-      f.puts data.join("|")
     end
   end
+  spear_status.destroy
 
 end
 
